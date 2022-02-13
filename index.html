@@ -5,76 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Teambuilding VR</title>
+    <title>Pasta Express</title>
   </head>
   <body>
     <div class="left-side">
       <img
-        src="/assets/pexels-vanessa-loring-7869238.jpg"
+        src="/assets/heather-gill-SJ7uORconic-unsplash.jpg"
         alt="image of 2 kids wearing VR headsets playing together"
         id="image-background"
       />
       <div class="company-logo">
         <img
-          src="./assets/vr-team-logo.png"
+          src="./assets/pasta-express-logo.png"
           alt="vr team logo which contain a symbol drawing of a blue head wearing a vr headset"
           id="logo"
         />
-        <h1 id="logo-name">Odin</h1>
+        <h1 id="logo-name">Pasta Express</h1>
       </div>
       <p class="bottom">
         Photo by
-        <a href="https://www.pexels.com/@vanessa-loring" class="credit"
-          >Vanessa Loring</a
+        <a href="https://unsplash.com/@heathergill" class="credit"
+          >Heather Gill</a
         >
-        from
-        <a
-          href="https://www.pexels.com/photo/little-girl-in-vr-headset-7869238/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
-          class="credit"
-          >Pexels</a
+        on
+        <a href="https://unsplash.com/photos/SJ7uORconic" class="credit"
+          >Unsplash</a
         >
       </p>
     </div>
     <main>
       <div class="header">
         <h2 class="headline">
-          This is not a real online service! You know you need something like
-          this in your life to help you relize your deepest dreams.<br />Sign up
-          now to get started.
+          We are an Artisan Fresh Pasta Producer. Our company was founded in
+          London out of a love for real Italian cuisine. Sign up today to have
+          fresh pasta delivered to your home.
         </h2>
         <h2 class="under-headline">You know you want to.</h2>
       </div>
-      <form action="#">
+      <form action="#" method="post">
         <div id="input-section">
           <h2>Let's do this!</h2>
           <div id="form-div">
             <div class="row">
               <div class="form-element">
                 <label for="first-name">First Name</label>
-                <input type="text" name="firstName" id="first-name" />
+                <input type="text" name="firstName" id="first-name" required />
               </div>
 
               <div class="form-element">
                 <label for="last-name">Last Name</label>
-                <input type="text" name="lastName" id="last-name" />
+                <input type="text" name="lastName" id="last-name" required />
               </div>
             </div>
 
             <div class="row">
               <div class="form-element">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required />
               </div>
               <div class="form-element">
                 <label for="phone-number">Phone Number</label>
-                <input type="tel" name="phoneNumber" id="phone-number" />
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  id="phone-number"
+                  required
+                />
               </div>
             </div>
 
             <div class="row">
               <div class="form-element">
                 <label for="pwd">password</label>
-                <input type="password" name="password" id="pwd" />
+                <input type="password" name="password" id="pwd" required />
               </div>
               <div class="form-element">
                 <label for="pwd-confirm">Confirm Password</label>
@@ -82,6 +85,7 @@
                   type="password"
                   name="passwordConfirm"
                   id="pwd-confirm"
+                  required
                 />
               </div>
             </div>
