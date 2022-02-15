@@ -102,3 +102,48 @@ input {
   padding-right: 20vw;
   margin: 0;
 }
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 1px 2px 8px 0px #80808073;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border: 1px solid red;
+}
+
+input:not(.pwd-wrong):not(:focus):not(:placeholder-shown):valid {
+  border: 1px solid green;
+}
+
+input:not(.pwd-wrong):not(:focus):not(:placeholder-shown):valid + span::before {
+  color: green;
+  content: "Correct ✔️";
+  display: block;
+}
+
+#email:not(:focus):not(:placeholder-shown):invalid + span::before {
+  color: red;
+  content: "*Invalid Email";
+  display: block;
+}
+
+#phone-number:not(:focus):not(:placeholder-shown):invalid + span::before {
+  color: red;
+  content: "*Invalid Phone number";
+  display: block;
+}
+
+#pwd:not(:focus):not(:placeholder-shown):invalid + span::before {
+  color: red;
+  content: "*Password must be atleast 8 characters, includes an uppercase letter, a lowercase letter and a number.";
+  display: block;
+}
+.pwd-wrong:not(:focus):not(:placeholder-shown) {
+  border: 1px solid red;
+}
+.pwd-wrong + span::before {
+  color: red;
+  content: "password not matching";
+  display: block;
+}
