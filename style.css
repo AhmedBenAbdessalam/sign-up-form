@@ -8,11 +8,14 @@
 }
 
 body {
-  display: flex;
   margin: 0;
   padding: 0;
+  background-color: #f9fafb;
 }
 
+.container {
+  display: flex;
+}
 .left-side {
   position: relative;
   height: 100vh;
@@ -52,21 +55,27 @@ body {
 }
 
 main {
-  padding-top: 15vh;
-  background-color: #f9fafb;
-  width: 100%;
+  padding-top: min(2em, 5%);
+  max-width: 900px;
   height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+main > * {
+  width: 90%;
+}
+form {
+  width: calc(90% + var(--padding-main));
 }
 .header {
   padding-left: var(--padding-main);
-  padding-right: var(--padding-main);
 }
 
 form h2 {
   margin-top: 0;
 }
 h2 {
-  font-size: 2rem;
+  font-size: max(1.2rem, 1.5vw);
 }
 form > button {
   margin-left: var(--padding-main);
@@ -105,17 +114,15 @@ form > button:active {
 input {
   border: solid 1px #ebebeb;
   border-radius: 4px;
-  flex-basis: 1.8rem;
+  flex-basis: 1.7rem;
   background-color: #fffefe;
 }
 #input-section {
   background-color: white;
   box-shadow: 7px 5px 7px 0px #80808045;
-  padding: 1.5em var(--padding-main);
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  padding-left: var(--padding-main);
-  padding-right: 20vw;
+  padding-inline: var(--padding-main);
   margin: 0;
 }
 input:focus {
@@ -167,8 +174,8 @@ input:not(.pwd-wrong):not(:focus):not(:placeholder-shown):valid + span::before {
 main > p {
   margin-left: var(--padding-main);
   font-weight: 600;
-  font-size: 1.2rem;
-  margin-top: 3rem;
+  font-size: max(0.9rem, 1.1vw);
+  margin-top: 1em;
 }
 main > p > a {
   color: rgb(255 172 0);

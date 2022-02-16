@@ -9,126 +9,125 @@
     <title>Pasta Express</title>
   </head>
   <body>
-    <div class="left-side">
-      <img
-        src="./assets/pasta.jpg"
-        alt="a jar full of different kinds of pasta"
-        id="image-background"
-      />
-      <div class="company-logo">
+    <div class="container">
+      <div class="left-side">
         <img
-          src="./assets/pasta-express-logo.png"
-          alt="vr team logo which contain a symbol drawing of a blue head wearing a vr headset"
-          id="logo"
+          src="./assets/pasta.jpg"
+          alt="a jar full of different kinds of pasta"
+          id="image-background"
         />
-        <h1 id="logo-name">Pasta Express</h1>
+        <div class="company-logo">
+          <img
+            src="./assets/pasta-express-logo.png"
+            alt="vr team logo which contain a symbol drawing of a blue head wearing a vr headset"
+            id="logo"
+          />
+          <h1 id="logo-name">Pasta Express</h1>
+        </div>
+        <p class="bottom">
+          Photo by
+          <a href="https://unsplash.com/@heathergill" class="credit"
+            >Heather Gill</a
+          >
+          on
+          <a href="https://unsplash.com/photos/SJ7uORconic" class="credit"
+            >Unsplash</a
+          >
+        </p>
       </div>
-      <p class="bottom">
-        Photo by
-        <a href="https://unsplash.com/@heathergill" class="credit"
-          >Heather Gill</a
-        >
-        on
-        <a href="https://unsplash.com/photos/SJ7uORconic" class="credit"
-          >Unsplash</a
-        >
-      </p>
-    </div>
-    <main>
-      <div class="header">
-        <h2 class="headline">
-          We are an Artisan Fresh Pasta Producer. Our company was founded in
-          London out of a love for real Italian cuisine. Sign up today to have
-          fresh pasta delivered to your home.
-        </h2>
-        <h2 class="under-headline">You know you want to.</h2>
-      </div>
-      <form action="#" method="post">
-        <div id="input-section">
-          <h2>Let's do this!</h2>
-          <div id="form-div">
-            <div class="row">
-              <div class="form-element">
-                <label for="first-name">First Name</label>
-                <input
-                  type="text"
-                  name="firstName"
-                  id="first-name"
-                  required
-                  placeholder=" "
-                />
-                <span></span>
+      <main>
+        <div class="header">
+          <h2 class="headline">
+            We are an Artisan Fresh Pasta Producer. Our company was founded in
+            London out of a love for real Italian cuisine. Sign up today to have
+            fresh pasta delivered to your home.
+          </h2>
+          <h2 class="under-headline">You know you want to.</h2>
+        </div>
+        <form action="#" method="post">
+          <div id="input-section">
+            <h2>Let's do this!</h2>
+            <div id="form-div">
+              <div class="row">
+                <div class="form-element">
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="first-name"
+                    required
+                    placeholder=" "
+                  />
+                  <span></span>
+                </div>
+                <div class="form-element">
+                  <label for="last-name">Last Name</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="last-name"
+                    required
+                    placeholder=" "
+                  />
+                  <span></span>
+                </div>
               </div>
-
-              <div class="form-element">
-                <label for="last-name">Last Name</label>
-                <input
-                  type="text"
-                  name="lastName"
-                  id="last-name"
-                  required
-                  placeholder=" "
-                />
-                <span></span>
+              <div class="row">
+                <div class="form-element">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder=" "
+                  />
+                  <span></span>
+                </div>
+                <div class="form-element">
+                  <label for="phone-number">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phoneNumber"
+                    id="phone-number"
+                    required
+                    placeholder=" "
+                    pattern="[0-9]{8}"
+                  />
+                  <span></span>
+                </div>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="form-element">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  placeholder=" "
-                />
-                <span></span>
-              </div>
-              <div class="form-element">
-                <label for="phone-number">Phone Number</label>
-                <input
-                  type="tel"
-                  name="phoneNumber"
-                  id="phone-number"
-                  required
-                  placeholder=" "
-                  pattern="[0-9]{8}"
-                />
-                <span></span>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="form-element">
-                <label for="pwd">password</label>
-                <input
-                  type="password"
-                  name="password"
-                  id="pwd"
-                  required
-                  placeholder=" "
-                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
-                />
-                <span></span>
-              </div>
-              <div class="form-element">
-                <label for="pwd-confirm">Confirm Password</label>
-                <input
-                  type="password"
-                  name="passwordConfirm"
-                  id="pwd-confirm"
-                  required
-                  placeholder=" "
-                />
-                <span></span>
+              <div class="row">
+                <div class="form-element">
+                  <label for="pwd">password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="pwd"
+                    required
+                    placeholder=" "
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                  />
+                  <span></span>
+                </div>
+                <div class="form-element">
+                  <label for="pwd-confirm">Confirm Password</label>
+                  <input
+                    type="password"
+                    name="passwordConfirm"
+                    id="pwd-confirm"
+                    required
+                    placeholder=" "
+                  />
+                  <span></span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <button type="submit">Create Account</button>
-      </form>
-      <p>Already have an account ?<a href="#"> Log in</a></p>
-    </main>
+          <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account ?<a href="#"> Log in</a></p>
+      </main>
+    </div>
   </body>
 </html>
